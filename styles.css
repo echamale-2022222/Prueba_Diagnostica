@@ -1,0 +1,26 @@
+body{
+    font-family: monospace;
+    text-align: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 5rem;
+    color: chocolate;
+}
+
+.subtitle{
+    font-size: 3rem;
+    color: black;
+}
+
+hr{
+    position: relative;
+    top: 10px;
+    border: none;
+    height: 10px;
+    background: cadetblue;
+    margin-bottom: px;
+    width: 50em;
+
+}
