@@ -5,12 +5,12 @@ body{
 }
 
 .title{
-    font-size: 5rem;
+    font-size: 4rem;
     color: chocolate;
 }
 
 .subtitle{
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
 }
 
@@ -22,5 +22,8 @@ hr{
     background: cadetblue;
     margin-bottom: px;
     width: 50em;
+}
 
+.word{
+    font-size: 3rem;
 }
