@@ -13,11 +13,8 @@ function enviarDatosAlServidor(nombre) {
     return new Promise((resolve,reject) =>{
         setTimeout(() => {
             const autorizado = (nombre.toLowerCase() == 'braulio');
-            if (autorizado) {
-                resolve('Bienvenido al Sistema');
-            } else {
-                reject('Usted no esta autorizado');
-            }        
+            const resultado = autorizado ? 'Yo soy el cordiiii' : 'Acceso denegado'
+            resultado ? resolve(resultado) : reject(resultado);    
         }, 2000);
     });
 }
