@@ -1,0 +1,56 @@
+body {
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.titulo {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.calc {
+    text-align: center;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px snow;
+    background: linear-gradient(90deg, rgba(0,15,255,1) 0%, rgba(0,0,0,1) 50%, rgba(1,14,252,1) 100%);
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: royalblue;
+    color: aliceblue;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+
+footer{
+    position: absolute;
+    top: 900px;
+    color: snow;
+    font-size: 1.2rem;
+}

@@ -1,225 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resources/style.css">
-    <title>Portafolio web</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Calculadora</title>
 </head>
-
 <body>
-    <section id="home">
-        <div class="container-main">
-            <header>
-                <div class="container-header">
-                    <h1>*-PORTAFOLIO-*</h1>
-                    <nav class="nav">
-                        <ul class="links">
-                            <li><a href="#home">Inicio</a></li>
-                            <li><a href="#about-me">Sobre mí</a></li>
-                            <li><a href="#projects">Proyectos</a></li>
-                            <li><a href="#skills">Habilidades</a></li>
-                            <li><a href="#multimedia">Multimedia</a></li>
-                            <li><a href="#contact">Contacto</a></li>
-                        </ul>
-                    </nav>
-                    
-                    <div class="social-networks">
-                        <a href="#"><img src="/resources/images/linkedin.svg" alt="LINKEDIN"></a>
-                        <a href="#"><img src="/resources/images/github.svg" alt="GIT HUB"></a>
-                        <a href="#"><img src="/resources/images/youtube.svg" alt="YOUTUBE"></a>
-                    </div>
-                </div>
-            </header>
-            <div class="information">
-                <p class="welcome">Bienvenidos</p>
-                <h2>Hola, soy <span>Edwar Chamalé</span>, Programador</h2>
-                <p class="description">Estudiante de informática en el colegio Kinal, con interés en la programación
-                y el desarrollo web y aplicaciones móviles. Estoy entusiasmado con el futuro de la informática y con
-                las posibilidades que ofrece esta carrera. Estoy seguro que la tecnología tiene el potencial de 
-                cambiar el mundo para mejor, y me gustaría ser parte de ese cambio.</p>
-                <a href="#about-me">Conoce mas sobre mí</a>
-            </div>
+    <h1 class="titulo">Bienvenidos a mi calculadora</h1>
+    <div class="calc">
+        <input type="text" id="pantalla" readonly>
+        <div class="botones">
+            <button onclick="agregarCaracter('7')">7</button>
+            <button onclick="agregarCaracter('8')">8</button>
+            <button onclick="agregarCaracter('9')">9</button>
+            <button onclick="agregarCaracter('/')">/</button>
+            <button onclick="agregarCaracter('4')">4</button>
+            <button onclick="agregarCaracter('5')">5</button>
+            <button onclick="agregarCaracter('6')">6</button>
+            <button onclick="agregarCaracter('*')">*</button>
+            <button onclick="agregarCaracter('1')">1</button>
+            <button onclick="agregarCaracter('2')">2</button>
+            <button onclick="agregarCaracter('3')">3</button>
+            <button onclick="agregarCaracter('-')">-</button>
+            <button onclick="agregarCaracter('0')">0</button>
+            <button onclick="agregarCaracter('.')">.</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="agregarCaracter('+')">+</button>
+            <button onclick="limpiarPantalla()">C</button>
         </div>
-    </section>
+    </div>
 
-    <section id="about-me">
-        
-        <div class="container-photo">
-            <img src="/resources/images/Programador.jpg" alt="Foto">
-        </div>
-        <div class="about-me">
-            <p class="title-section">Sobre mí</p>
-            <h2>Hola, soy <span>Edwar Chamalé</span></h2>
-            <h3>Programador</h3>
-            <p>Tengo experiencia en el lenguaje de programación Java, así como también tengo un profundo conocimiento de los conceptos
-            básicos del lenguaje Java. Tengo experiencia en el uso de herramientas como Scene Builder para la creación de vistas 
-            para Java FX, y iReport para generar reportes. También poseo experiencia en el manejo de bases de datos 
-            relacionales como MySQL. Actualmente me encuentro estudiando HTML, CSS, JavaScript para reforzar mis 
-            conocimientos en el desarrollo web.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h1>Mis Proyectos</h1>
-            <div class="card">
-                <figure>
-                    <img src="/resources/images/tonnyskinal.png" alt="Proyecto">
-                </figure>
-                <div class="content">
-                    <h3>Tonnys Kinal</h3>
-                    <p>Aplicación de escritorio desarrollado en Java FX, herramientas que se utilizaron fueron Scene Builder para la 
-                    creación y diseño de vistas, iReporte para generar reportes que el usuario puede guardar o imprimir si lo desea.</p>
-                    <a href="#">Ir al repositorio</a>
-                </div>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="/resources/images/carrito.png" alt="Proyecto">
-                </figure>
-                <div class="content">
-                    <h3>Sistema de ventas</h3>
-                    <p>Aplicación web que fue desarrollada en Java EE, así como también posee un carrito de ventas funcional donde a 
-                    través de un catalogo de productos en existencia el usuario pueda comprar esos productos a la hora de pagar se le 
-                    genera su factura.</p>
-                    <a href="#">Ir al repositorio</a>
-                </div>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="/resources/images/rumbotriangular.png" alt="Proyecto">
-                </figure>
-                <div class="content">
-                    <h3>Rumbo Triangular</h3>
-                    <p>Aplicación de escritorio desarrollada en Java FX, herramienta que se utilizo fue Scene Builder para la 
-                    creación de vistas, la aplicación se base en resolver diferentes problemas de matemáticas asi como también
-                    la conversión de números.</p>
-                    <a href="#">Ir al repositorio</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container-skills-main">
-            <h4>HABILIDADES</h4>
-            <div class="container-skills">
-                <div class="shape">
-                    <div class="image-java">
-                    </div>
-                </div>
-                <h3 class="title-skills">Java</h3>
-                <p>
-                    Experiencia
-                    <br>
-                    ★★★☆☆
-                    <br>
-                    Lenguaje de programación
-                </p>
-            </div>
-
-            <div class="container-skills">
-                <div class="shape">
-                    <div class="image-mysql">
-                    </div>
-                </div>
-                <h3 class="title-skills">MySQL</h3>
-                <p>
-                    Experiencia
-                    <br>
-                    ★★★☆☆
-                    <br>
-                    Gestor de bases de datos
-                </p>
-            </div>
-            <div class="container-skills">
-                <div class="shape">
-                    <div class="image-html">
-                    </div>
-                </div>
-                <h3 class="title-skills">HTML</h3>
-                <p>
-                    Experiencia
-                    <br>
-                    ★★☆☆☆
-                    <br>
-                    Estructura de contenido
-                </p>
-            </div>
-
-            <div class="container-skills">
-                <div class="shape">
-                    <div class="image-css">
-                    </div>
-                </div>
-                <h3 class="title-skills">CSS</h3>
-                <p>
-                    Experiencia
-                    <br>
-                    ★★☆☆☆
-                    <br>
-                    Estilo del contenido web
-                </p>
-            </div>
-
-            <div class="container-skills">
-                <div class="shape">
-                    <div class="image-js">
-                    </div>
-                </div>
-                <h3 class="title-skills">JAVASCRIPT</h3>
-                <p>
-                    Experiencia
-                    <br>
-                    ★☆☆☆☆
-                    <br>
-                    Interactividad web
-                </p>
-            </div>
-        </div>    
-    </section>
-
-    <section id="multimedia">
-        <div class="container-multimedia-main">
-            <div class="container-multimedia">
-                <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/IXWEQHCKR20?si=xxW--9bRDguxl42h" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; 
-                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                web-share" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container-contact-main">
-            <div class="container-contact">
-                <form action="#">
-                    <h1>Contacto</h1><br><br><br>
-                    <label for="">Nombre </label>
-                    <input type="text"><br><br>
-                    <label for="">Apellido</label>
-                    <input type="text"><br><br>
-                    <label for="">Correo electronico</label>
-                    <input type="text"><br><br>
-                    <label for="">Mensaje</label>
-                    <input type="text" class="message"><br><br>
-                    <a href="#" class="send">Enviar</a>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section id="footer">
-        <p>Todos los derechos reservados - Edwar Chamalé - 2024</p>
-        <div class="social">
-            <a href="#"><img src="/resources/images/linkedin.svg" alt="LINKEDIN"></a>
-            <a href="#"><img src="/resources/images/github.svg" alt="GIT HUB"></a>
-            <a href="#"><img src="/resources/images/youtube.svg" alt="YOUTUBE"></a>
-        </div>
-    </section>
+    <footer>© Edwar Chamalé - Kinal 2024</footer>
+   
+    <script src="./assets/script.js"></script>
 </body>
-
 </html>
